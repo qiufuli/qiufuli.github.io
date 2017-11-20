@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>邱福利前端学习资料整理</title>
+  <title>Promise对象 | 邱福利前端学习资料整理</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="邱福利前端学习资料整理">
-<meta property="og:url" content="http://qiufuli.github.io/index.html">
+  <meta name="description" content="为了我们的代码更加具有可读性和可维护性，我们需要将数据请求与数据处理明确的区分开来是异步编程的一种解决方案，比较传统的解决方案（回调函数和事件）更合理更强大Promise对象有以下2个特点：1.对象的状态不受外界影响。Promise对象代表一个异步操作，有三种状态：Pending(进行中)、Resolved(已完成)和">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Promise对象">
+<meta property="og:url" content="http://qiufuli.github.io/2017/11/20/promise/index.html">
 <meta property="og:site_name" content="邱福利前端学习资料整理">
-<meta property="og:description" content="blog">
+<meta property="og:description" content="为了我们的代码更加具有可读性和可维护性，我们需要将数据请求与数据处理明确的区分开来是异步编程的一种解决方案，比较传统的解决方案（回调函数和事件）更合理更强大Promise对象有以下2个特点：1.对象的状态不受外界影响。Promise对象代表一个异步操作，有三种状态：Pending(进行中)、Resolved(已完成)和Rejected(已失败)。只有异步操作的结果，可以决定当前是哪一种状态，任何其">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-11-20T06:15:04.656Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="邱福利前端学习资料整理">
-<meta name="twitter:description" content="blog">
+<meta name="twitter:title" content="Promise对象">
+<meta name="twitter:description" content="为了我们的代码更加具有可读性和可维护性，我们需要将数据请求与数据处理明确的区分开来是异步编程的一种解决方案，比较传统的解决方案（回调函数和事件）更合理更强大Promise对象有以下2个特点：1.对象的状态不受外界影响。Promise对象代表一个异步操作，有三种状态：Pending(进行中)、Resolved(已完成)和Rejected(已失败)。只有异步操作的结果，可以决定当前是哪一种状态，任何其">
   
     <link rel="alternate" href="/atom.xml" title="邱福利前端学习资料整理" type="application/atom+xml">
   
@@ -67,9 +68,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-promise" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-promise" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/11/20/promise/" class="article-date">
   <time datetime="2017-11-20T06:09:41.000Z" itemprop="datePublished">2017-11-20</time>
@@ -86,8 +85,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/20/promise/">Promise对象</a>
+    <h1 class="article-title" itemprop="name">
+      Promise对象
     </h1>
   
 
@@ -114,95 +113,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-shuibi" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/11/20/shuibi/" class="article-date">
-  <time datetime="2017-11-20T01:44:06.000Z" itemprop="datePublished">2017-11-20</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/write/">随笔</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/20/shuibi/">独白</a>
-    </h1>
+    <a href="/2017/11/20/shuibi/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">独白</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote><p>可能每个人的经历不一样，所处的现状也有所不同，有人风生水起，平步青云，有人却碌碌无为，平庸一生。一个人一个活法。每个人的嘴里都有自己那么一套说辞。</p>
-<footer><strong>2017年11月20日</strong><cite>个人独白</cite></footer></blockquote>
-<p>二十几年的时光，悄然过去，回想起来我好像还没有做过让自己自豪的事，或者说做了哪件让自己非常满意的事。岁月荏苒，我已不是少年，现在很多事情需要我独自面对，虽然可以诉苦，可以抱怨，甚至可以一走了之回到家乡找个稳定的工作，陪在父母的身边，因为无论你怎么样，父母都会站在你身边。 但是为什么不那么做？或许，，，心里面多少会有些不甘心吧。 不甘心自己碌碌无为，不甘心一直在别人的眼色中过活，不甘心为什么别人能做的到而自己却，，， 虚荣心也好自尊心也罢，既然已经选择了那么我不会后悔，路自己选了，我会一步一个脚印踏实的走下去。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://qiufuli.github.io/2017/11/20/shuibi/" data-id="cja7sryhe0005vwci6w5vu1tl" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-jsonp" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/11/17/jsonp/" class="article-date">
-  <time datetime="2017-11-17T03:42:16.000Z" itemprop="datePublished">2017-11-17</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/js/">js</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/17/jsonp/">jsonp学习整理</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>动态创建一个script标签（script标签是没有同源限制的可以跨域的）script的src指向我们请求真实服务端的地址 地址的后面会有个callback=a/b/c/…会在返回的数据里面 调用a方法里面会包含你想要的数据 然后相当于在前端执行a这个方法我们知道这时候前端是没有a方法的 所以需要在前端window下定义a方法来获取对应的数据。</p>
-<h5 id="实现效果如下"><a href="#实现效果如下" class="headerlink" title="实现效果如下"></a>实现效果如下</h5><p><img src="/2017/11/17/jsonp/01.png" alt="Alt text"><br><img src="/2017/11/17/jsonp/02.png" alt="Alt text"></p>
-<h5 id="js代码实现的方式"><a href="#js代码实现的方式" class="headerlink" title="js代码实现的方式"></a>js代码实现的方式</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">	url:<span class="string">'xxxx'</span>,</span><br><span class="line">	dataType:<span class="string">'jsonp'</span>,</span><br><span class="line">	data:<span class="string">''</span>,</span><br><span class="line">	jsonp:<span class="string">'callback'</span>,</span><br><span class="line">	success:<span class="keyword">function</span>(result)&#123;</span><br><span class="line">		<span class="keyword">for</span>(var i <span class="keyword">in</span> result)&#123;</span><br><span class="line">			alert(i+<span class="string">':'</span>+result[i]);//循环输出a:1 b:2...		</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://qiufuli.github.io/2017/11/17/jsonp/" data-id="cja7srygw0000vwcisxt9nohu" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
